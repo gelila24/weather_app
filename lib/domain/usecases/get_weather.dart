@@ -7,7 +7,7 @@ class GetWeather {
   final WeatherRepository repository;
   GetWeather({required this.repository});
 
-  /// Executes the `getWeather` function from the `WeatherRepository` class
+  /// Executes the [getWeather] function from the [WeatherRepository] class
   /// with the given latitude and longitude.
   Future<Weather> execute(double lat, double lon) {
     return repository.getWeather(lat, lon);

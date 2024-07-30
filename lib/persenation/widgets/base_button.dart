@@ -8,13 +8,13 @@ class BaseButton extends StatelessWidget {
   const BaseButton({required this.title, required this.onPressed, super.key});
 
   @override
+    /// Builds the widget tree for this widget which is a simple button.
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onPressed,
       child: Container(
           decoration: AppTheme.mainButtonDecoration,
           padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
-          // width is given as fixed
           width: 366,
           child: Text(
             title,

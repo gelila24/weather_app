@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// This class is used to define the theme of the application.
 class AppTheme {
   //colors
   static const Color primaryColor = Colors.orange;
